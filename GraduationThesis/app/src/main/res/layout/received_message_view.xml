@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff121212"
+        android:text="09:05"
+        android:id="@+id/first_receive_time" />
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/first_receive_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:id="@+id/sender_photo"
+            android:src="@drawable/chatone" />
+
+        <LinearLayout
+            android:layout_below="@id/first_receive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incoming"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/send_content"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="行，下午学校门口见面" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

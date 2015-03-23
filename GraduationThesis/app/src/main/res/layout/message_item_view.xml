@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/contacts_photo"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/friends" />
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刘德华"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/contacts_name" />
+
+        <TextView
+            android:id="@+id/contact_content"
+            android:singleLine="true"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/contacts_name"
+            android:layout_below="@id/contacts_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="你在干嘛啊，怎么不回消息........" />
+    </RelativeLayout>
+</LinearLayout>

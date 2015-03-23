@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/contactsheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_turn_back"
+            android:src="@drawable/turnback" />
+
+        <TextView
+            android:id="@+id/chat_friend_name"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刘德华"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:padding="5dp"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_content_view"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFEEEEEE"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/chat_input_content"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:background="@drawable/edit_text"
+            android:layout_weight="1.0"
+            android:hint="请输入内容"
+            android:inputType="textWebEditText"
+            android:text="" />
+
+        <Button
+            android:id="@+id/chat_sendbtn"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/main_page_item_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:text=" 发送 " />
+    </LinearLayout>
+</LinearLayout>
